@@ -12,7 +12,14 @@
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void	ft_print_alphabet(void)
 {
-	write(1, &c, 1);
+	char	letra;
+
+	letra = 'a';
+	while (letra <= 'z')
+	{
+		write(1, &letra, 1);
+		letra++;
+	}
 }
